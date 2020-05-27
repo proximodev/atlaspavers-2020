@@ -1,0 +1,1168 @@
+/*
+Theme Name: Enfold Child
+Description: 1A <a href='http://codex.wordpress.org/Child_Themes'>Child Theme</a> for the Enfold Wordpress Theme. If you plan to do a lot of file modifications we recommend to use this Theme instead of the original Theme. Updating wil be much easier then.
+Version: 1.0
+Author: Proximo Development
+Author URI: http://www.kriesi.at
+Template: enfold
+*/
+
+/** Global **/
+p + h1, p + h2, p + h3, p + h4, p + h5, p + h6 {
+	margin-top: 1em !important;
+}
+
+h1, h2, h3, h4 {
+	letter-spacing: 0px !important;
+}
+
+h1 {
+	margin-bottom: 1.5rem !important;
+}
+
+p {
+	font-size: 1.25rem;
+}
+
+h1 {
+	font-size: 2.25rem;
+}
+
+h2 {
+	font-size: 1.75rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+strong {
+	color: #333333 !important;
+}
+
+.entry-content-wrapper ul, .entry-content-wrapper ol {
+	margin-top: 1rem;
+}
+
+.entry-content-wrapper li {
+	padding: 0px !important;
+}
+
+#main .container {
+	width: 100%;
+	max-width: 1440px;
+	padding: 0px 20px;
+}
+
+#main .container .av-content-small.units {
+	width: 75% !important;
+}
+
+/** Header **/
+
+.html_header_top.html_header_sticky #top #wrap_all #main {
+	padding-top: 100px !important;
+}
+
+
+#header .av-logo-container {
+	padding: 0px !important;
+}
+
+.html_header_top #top .av_header_stretch .container {
+	width: 100% !important;
+	max-width: 100% !important;
+}
+
+#top #header_main > .container .main_menu .av-main-nav > li > a {
+	height: 40px !important;
+	line-height: 40px !important;
+	padding: 0px 0px 0px 30px
+}
+
+#top #header_main > .container .main_menu .av-main-nav > li > a:hover {
+	font-weight: inherit;
+}
+
+.responsive .logo {
+	margin: 23px 0px 0px 30px;
+	float: left !important;
+}
+
+.responsive .logo a img {
+	height: 55px !important;
+	width: auto;
+    z-index: 10;
+}
+
+#top #header .av-main-nav > li a {
+	font-family: Lato, Sans-serif !important;
+	font-weight: 400 !important;
+	font-size: 16px !important;
+}
+
+#top #header .av-main-nav > li > a:hover {
+	text-decoration: underline;
+}
+
+#top #header .av-main-nav {
+	padding-right: 30px;
+}
+
+
+/** Menu **/
+
+#header_main .av-main-nav-wrap {
+	clear: both !important;
+	float: right !important;
+	margin-top: 46px;
+	margin-right: 0px;
+}
+
+.menu-divider  {
+	border-left: 1px solid #dcdcdc;
+	margin-right: 25px;
+}
+
+.svg-inline--fa {
+	color: #80827d;
+	margin: 2px 3px 0px;
+}
+
+#avia-menu .fa, #avia-menu .fas {
+    margin-right: 8px;
+}
+
+/** Phone menu  **/
+
+#header_meta .container {
+	min-height: 28px !important;;
+}
+
+.phone-info, div#header_meta {
+	background-color: #154f7d !important;
+	padding: 5px 30px 7px 30px !important;
+	border-bottom-left-radius: 12px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.phone-info .phone-info-item, #top .sub_menu>ul {
+	font-family: Lato, Sans-serif !important;
+	font-size: 15px;
+	color: #fff;
+	display: inline-block;
+	padding: 0px;
+	font-weight: normal;
+}
+
+
+.phone-info .phone-info-item .location, #top .sub_menu>ul>li span {
+    font-weight: bold;
+    margin-right: 3px;
+    color: #fff !important;
+}
+
+.phone-info .phone-info-item:last-child, #top .sub_menu>ul>li:last-child {
+    padding-right: 0px;
+}
+
+
+#top .sub_menu>ul>li {
+	border: none !important;
+	padding: 0px 18px 0px 0px;
+}
+
+.av_secondary_right .sub_menu, .av_secondary_right .sub_menu>ul>li:last-child {
+	padding: 0px !important;
+}
+
+#top .sub_menu>ul>li>a {
+	font-weight: 400 !important;
+	color: #fff !important;
+}
+
+/** Hero **/
+
+#overlay-hero {
+	position: fixed; /* Sit on top of the page content */
+	display: none; /* Hidden by default */
+	width: 100%; /* Full width (cover the whole page) */
+	height: 100%; /* Full height (cover the whole page) */
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+	z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+	cursor: pointer; /* Add a pointer on hover */
+}
+
+.hero-icon.svg-inline--fa {
+	color: #fff !important;
+	margin: 2px 5px 0px;
+}
+
+.ls-bg {
+	filter: brightness(80%) !important;
+}
+
+.ls-bg::after {
+	width: 100%;
+	height: 100%;
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 99;
+	pointer-events: none;
+
+	/* black overlay with 50% transparency */
+	background: rgba(0, 0, 0, 0.5);
+}
+
+#top .avia-layerslider .ls-nav-prev:before, #top .avia-layerslider .ls-nav-next:before {
+    background-color: transparent;
+}
+
+#top .avia-layerslider .ls-nav-prev, #top .avia-layerslider .ls-nav-next {
+    opacity: 1;
+    margin: 0px -25px;
+    top: 10%;
+}
+
+.avia-layerslider .ls-thumbnail-wrapper {
+    bottom: 94px !important;
+}
+
+#layerslider_5 .ls-thumb-1 img, #layerslider_5 .ls-thumb-2 img, #layerslider_5 .ls-thumb-3 img, #layerslider_5 .ls-thumb-4 img, #layerslider_5 .ls-thumb-5 img {
+    width: 90% !important;
+    height: 167px !important;
+    float: left;
+}
+
+#ls-global .ls-container ls-thumbnail-slide a img {
+    width: 250px !important;
+    height: 167px !important;
+}
+
+.ls-fullwidth .ls-thumbnail-inner {
+    padding: 0px !important;
+    margin-left: 0px !important;
+    border: none;
+    background: transparent !important;
+}
+
+.hero-learn-more {
+    font-family: Lato, Sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    margin-left: 5px;
+    color: #ffffff !important;
+    text-transform: uppercase;
+}
+
+.hero-learn-more:hover {
+    text-decoration: none;
+    color: #154f7d;
+    opacity: .8;
+}
+
+.thumb-label {
+    font-family: Lato, Sans-serif;
+    font-size: 14px;
+    color: #53564e;
+    font-weight: 600;
+    position: absolute;
+    width: 90%;
+    text-transform: uppercase;
+    padding: 6px 15px 7px 16px;
+    width: auto;
+    background-color: rgba(255,255,255, .8);
+}
+
+.thumb-label.ls-thumb-active {
+    color: #ffffff;
+    /** background-color: rgba(21,79,125, .8); **/
+    background-color: transparent;
+    font-weight: bold;
+}
+
+/** Form **/
+
+#top label {
+	font-weight: normal !important;
+	font-size: .9rem !important;
+	font-family: Lato, Sans-serif !important;
+}
+
+.wpcf7-list-item-label {
+	font-family: Lato, Sans-serif;
+	font-size: 1rem !important;
+}
+
+/** Team **/
+.team-img-container {
+	max-height: 235px !important;;
+}
+
+.avia-team-member {
+	padding: 0px !important;
+}
+
+.team-member-name {
+	margin-top: 5px !important;
+	font-size: 1.2rem !important;
+	margin-bottom: 5px;
+}
+
+.team-member-job-title {
+	font-style: italic;
+}
+
+.avia-image-container.av-styling-.avia-builder-el-3.el_before_av_textblock.avia-builder-el-first.team-bio-image.avia-align-center {
+	margin-top: 6px;
+	padding-bottom: 10px;
+}
+
+/** Page **/
+#main .section-banner h1 {
+	color: #ffffff !important;
+	text-transform: uppercase !important;
+	font-size: 44px !important;
+	margin-bottom: 0px !important;
+}
+
+#main .section-banner.dark h1 {
+	color: #333333 !important;
+}
+
+#main .team-header h1 {
+	margin-bottom: -15px !important;
+}
+
+#main .team-header h2 {
+	padding-top:50px !important; margin-bottom:-20px !important;
+}
+
+.page-banner .av-section-color-overlay-wrap .container {
+    height: 350px !important;
+}
+
+#main .alignright {
+	max-width: 450px !important;
+	height: auto;
+	padding: 12px 0px 1.5rem 2.5rem !important;
+	line-height: 1.8;
+}
+
+#main .alignleft {
+	max-width: 450px !important;
+	height: auto;
+	padding: 10px 2px 2rem 0rem !important;
+	line-height: 1.8;
+}
+
+#main .wp-caption img {
+	padding: 0px 0px 1rem !important;
+}
+
+#main .wp-caption.alignright, #main .wp-caption.alignleft {
+	margin: 0 !important;
+	border: none !important;
+	line-height: 1.8 !important;
+}
+
+.wp-caption-text {
+	display: inline;
+	font-family: Lato, Sans-serif;
+	font-size: 16px;
+	line-height: 16px !important;
+	font-style: normal;
+	font-weight: 600;
+	margin: 0 auto;
+	padding: 10px 0px 0px 0px;
+	text-align: left;
+	float: none;
+}
+
+
+/** Team page **/
+
+.team-member-description {
+    border-bottom: 1px solid #ccc;
+}
+
+.team-member-description p {
+    font-size: 1.25rem;
+    line-height: 1.3;
+    FONT-STYLE: oblique;
+    margin-top: .25rem;
+	padding-bottom: 5px;
+}
+
+/** quote **/
+.av-boxed-grid-style .avia-testimonial_inner {
+	background-color: #efefef;
+}
+
+.av-boxed-grid-style .avia-testimonial_inner .avia-testimonial-content p {
+	font-size: 22px;
+	font-style: italic;
+	font-weight: bold;
+	line-height: 1.4;
+	margin-bottom: 0px;
+}
+
+.av-boxed-grid-style .avia-testimonial_inner .avia-testimonial-content p::before {
+	content: "“"
+}
+
+.av-boxed-grid-style .avia-testimonial_inner .avia-testimonial-content p::after {
+	content: "”"
+}
+
+.avia-testimonial-name {
+	display: inline !important;
+}
+
+.avia-testimonial-meta-mini {
+	font-family: Lato, Sans-serif;
+	font-size: 18px;
+	text-align: right;
+}
+
+.avia-testimonial-subtitle::before {
+	content: " | ";
+}
+
+.notification-box .avia_message_box_content {
+	text-transform: none !important;
+	font-family: Lato, Sans-serif;
+	line-height: 1.4;
+}
+
+/* Buttons */
+#top .avia-button {
+	padding-right: 25px !important;
+	padding-left: 25px !important;
+}
+
+/* Sidebar Widget **/
+
+#main .sidebar {
+	font-family: Lato, Sans-serif !important;
+}
+
+#main .sidebar .widget:first-child {
+	border-bottom: 1px solid #ccc !important;
+	padding: 10px 0px 25px;
+}
+
+#main .sidebar .widget {
+	border-bottom: 1px solid #ccc !important;
+	width: 90%;
+}
+
+#main .sidebar #custom_html-4 {
+	border-bottom: none !important;
+}
+
+#main .sidebar .widget:last-child {
+	border-bottom: none;
+}
+
+#main .sidebar h3.widgettitle {
+	border: none !important;
+	text-transform: uppercase !important;
+	padding: 0px;
+	margin-bottom: 12px;
+}
+
+#main .sidebar_left.sidebar_align_left .widget_nav_menu ul:first-child>.current_page_item {
+	padding: 0px 0px 5px 0px !important;
+	box-shadow: none !important;
+}
+
+#main .sidebar_left.sidebar_align_left .widget_nav_menu ul:first-child>.current_page_item a {
+	font-weight: normal;
+	text-decoration: underline;
+	padding: 0px !important;
+}
+
+main .all_colors .widgettitle {
+	border: none !important;
+	text-transform: uppercase !important;
+}
+
+#main .widget_nav_menu li {
+	padding: 0px !important;
+	font-family: Lato, Sans-serif;
+	line-height: 1.3rem;
+    margin-bottom: 8px;
+}
+
+.sidebar .widget_nav_menu ul:first-child>.current-menu-item {
+    box-shadow: none !important;
+}
+
+#top #wrap_all .footer_color h3.widgettitle {
+	font-size: 20px;
+	border: 0px;
+	margin: 0px;
+}
+
+.footer_color .textwidget.custom-html-widget {
+	font-family: Lato, Sans-serif;
+	line-height: 1.3rem;
+	font-size: 1rem;
+	color: #8c8c8c;
+}
+
+.footer_color .textwidget.custom-html-widget a {
+	color: #fff;
+}
+
+a.avia-button.avia-icon_select-no.avia-size-medium.avia-position-center {
+	margin-top: 20px;
+	background-color: #0059b3;
+}
+
+.textwidget.custom-html-widget p {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+/** Home **/
+.home #av_section_1 {
+	margin-top: 5rem;
+}
+
+
+/** Widget **/
+
+html #top .all_colors #yelp_widget-4 {
+    width: 90%;
+}
+
+html #top .all_colors #yelp_widget-4 .widgettitle {
+    border: none !important;
+    margin: 0px 0px 20px 0px;
+    padding: 0px;
+    text-transform: uppercase;
+}
+
+.yelp-review-excerpt {
+    font-family: Lato, Sans-serif !important;
+}
+
+.yelp-business-name a {
+    font-size: 1rem;
+}
+
+.ywp-review-read-more, .yelp-review-excerpt-text>p {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    margin: 0px;
+}
+
+.yelp-review-excerpt time {
+    font-size: 14px !important;
+    line-height: 1 !important;
+    margin-bottom: 8px;
+}
+
+.yelp-business {
+	webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	padding: 10px 0 0 0 !important;
+}
+
+.cta-widget .location {
+	display: inline-block;
+	color: #B9B9B9;
+	margin-right: 5px;
+}
+
+.cta-widget a.number {
+	font-weight: bold;
+	color: #656565;
+}
+
+.cta-widget a.number:hover {
+	color: #656565;
+}
+
+i.fal.fa-drafting-compass.fa-1x {
+	font-size: .9em;
+	padding-top: 6px;
+}
+
+.cta-widget {
+	width: 100%;
+	padding:20px 20px 12px 20px;
+	border:1px solid #B9B9B9;
+	border-radius:6px;
+}
+
+.cta-widget .cta-logo {
+	width: 100%;
+	margin:0px 0px 10px 0px;
+}
+
+.cta-widget .cta-title {
+	margin:0px 0px 10px 0px
+	font-family: Lato;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	color:#656565;
+}
+
+.cta-widget .cta-button-wrapper {
+	width: 100%;
+	margin:0px 0px 10px 0px
+}
+
+.cta-widget .cta-button-wrapper .cta-button {
+	background-color: #00B428;color: #ffffff;margin: 0px auto;display: block;max-width: 200px; padding-bottom: 8px;
+}
+
+.cta-widget .cta-number {
+	overflow: hidden; margin:0px 0px 10px 0px
+}
+
+.cta-widget .cta-number .cta-number-item {
+	width: 33%;text-align: center; float: left; line-height:1.3rem;
+}
+
+#layer_slider_1 {
+	background-color: #000000;
+}
+
+.belgard h3 {
+	margin-top: 1.6em !important;
+	font-size: 1.8em;
+	clear: both;
+    font-weight: 300;
+}
+
+.belgard h3:first-child {
+    margin-top: 2em !important;
+}
+
+.belgard .img-inline-left {
+	float: left;
+	margin-right: 1.8em !important;
+	margin-bottom: 1.8em !important;
+	max-width: 250px !important;
+}
+
+.belgard .logo-right {
+    float: right;
+    margin-left: 1.8em !important;
+    margin-bottom: 2em !important;
+    max-width: 250px !important;
+}
+
+.criareh-contact {
+	float: right;
+}
+
+.criareh-contact div.call-us {
+	float: right;
+	width: 100%;
+	text-align: center;
+}
+
+.criareh-contact h3 {
+	float: left;
+    margin-top: 35px;
+    margin-right: 20px;
+	font-weight: 300;
+	font-size: 18px;
+}
+
+.criareh-contact h4 {
+	font-size: 24px;
+	font-weight: 300;
+	color: #026838;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.criareh-contact a {
+	float: right;
+    background: #026838;
+    color: white;
+    padding: 20px 15px;
+    border-radius: 5px;
+    height: auto;
+    line-height: 100%;
+    margin-top: 18px;
+}
+
+.criareh-contact a:hover {
+	color: white;
+	cursor: pointer;
+}
+
+/** Footer **/
+
+footer#socket {
+	font-size: 15px !important;
+	line-height: 4rem !important;
+	text-align: center !important;
+	height: 4rem;
+	z-index: 1;
+}
+
+.footer_widget {
+	width: 100%;
+	min-width: 320px;
+}
+
+.footer_widget form {
+	margin-top: 20px;
+    float: left;
+    width: 100%;
+}
+
+.footer_widget span {
+    float: left;
+    width: 100%;
+    font-size: 13px;
+    text-align: center;
+	line-height: 120%;
+}
+
+.footer_widget input {
+    background-color: white !important;
+    border: none !important;
+    float: left !important;
+    width: 65% !important;
+}
+
+.footer_widget button {
+	float: right;
+    width: 30%;
+    background-color: #026838;
+    border: 0;
+    color: white;
+    padding: 9px 0;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+#footer .widget {
+	overflow: visible;
+}
+
+.team-img-container {
+	margin-bottom: 15px !important;
+}
+
+.avia-team-member {
+	text-align: center;
+	padding: 25px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+.team-member-job-title {
+	line-height: 1.4rem;
+	margin: 0px 0px 10px 0px;
+}
+
+.blog-news .slide-entry-excerpt {
+	overflow: visible !important;
+}
+
+.blog-home img {
+	border-radius: 100% !important;
+    border: 12px solid rgb(2, 104, 56);
+    width: 100%;
+}
+
+.blog-home h3 {
+	text-align: center !important;
+}
+
+.blog-home .read-more-link {
+	text-align: center;
+}
+
+.blog-home .slide-entry-excerpt {
+	min-height: 50px;
+}
+
+.avia-button.avia-color-green, .blog-news .read-more-link a  {
+	background-color: #026838;
+    border-color: #6F8F3B;
+    color: #fff;
+    border-radius: 4px !important;
+}
+
+.blog-news .read-more-link a  {
+	text-align: center;
+    text-transform: uppercase;
+    padding: 7px 9px;
+    font-size: 14px;
+}
+
+.blog-news .read-more-link a .more-link-arrow  {
+	display: none;
+}
+
+.av_minimal_header #header_main .container {
+	height: auto;
+}
+
+
+.member-design:hover {
+	background-color: #f2f2f2;
+}
+
+.blog-news .blog-categories, .blog-news .entry-footer {
+	display: none !important;
+}
+
+.contact-form-7-column-100 {
+	float: left;
+	width: 100%;
+}
+
+.contact-form-7-column {
+	float: left;
+	width: 47.5%;
+}
+
+.contact-form-7-column.right {
+	float: right;
+}
+
+.label-14 {
+	float: left;
+    width: 35%;
+}
+
+.label-13 {
+	float: right;
+    width: 60%;
+    text-align: left;
+}
+
+span.wpcf7-list-item {
+    width: 45%;
+    float: left;
+	margin-left: 1em !important;
+}
+
+.wpcf7-submit {
+    text-transform: uppercase;
+    padding: 13px 25px 12px 25px !important;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 4px !important;
+    margin: 60px auto 0px auto;
+}
+
+.wpcf7-validation-errors {
+    float: left;
+    width: 100%;
+    border: 1px solid red;
+}
+
+/** Media Queries **/
+
+
+@media only screen and (max-width: 1024px) {
+
+    .hide-tablet {
+        display: none !important;
+    }
+
+    .home #av_section_1 {
+		margin-top: 3rem;
+	}
+
+	#main .wp-caption {
+		width: 100% !important;
+	}
+
+	#main .alignright, #main .alignleft {
+		padding: 0 0 2rem 0 !important;
+		width: 100% !important;
+		max-width: 100% !important;
+	}
+
+	.avia-layerslider .ls-thumbnail-wrapper {
+		bottom: 75px !important;
+	}
+
+	#main .section-banner h1 {
+		font-size: 40px !important;
+	}
+
+    #main .section-banner h1 {
+        font-size: 36px !important;
+    }
+	
+	.page-banner .av-section-color-overlay-wrap .container {
+        height: 275px !important;
+    }
+
+	.criareh-contact h4 {
+		display: none;
+	}
+	.criareh-contact a {
+		margin-right: 55px;
+	}
+
+	.criareh-contact h3 {
+		display: none;
+	}
+
+}
+
+@media only screen and (max-width: 989px) {
+
+    .html_header_top.html_header_sticky #top #wrap_all #main {
+        padding-top: 0px !important;
+    }
+
+    .page-banner .av-section-color-overlay-wrap .container {
+        height: 250px !important;
+    }
+
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    p { font-size: 1.25rem; line-height: 1.9rem; }
+    h1 { font-size: 2rem !important; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.25rem; }
+
+    #main .container .av-content-small.units {
+		width: 100% !important;
+	}
+
+	.responsive #top #wrap_all #header {
+		position: fixed !important;
+	}
+
+	.html_header_top.html_header_sticky #top #wrap_all #main {
+		padding-top: 115px !important;
+	}
+
+    .phone-info, div#header_meta {
+        width: 100%;
+        border-bottom-left-radius: 0px;
+        padding: 2px 0px !important;
+    }
+
+    .avia-layerslider .ls-thumbnail-wrapper {
+		display: none !important;
+	}
+
+	.home #av_section_1 {
+		margin-top: 0rem;
+        margin-bottom: 0rem!important;
+	}
+
+    #main .section-banner h1 {
+        font-size: 32px !important;
+    }
+
+	.section-banner {
+		display: none;
+	}
+
+	.page-banner .av-section-color-overlay-wrap .container {
+		height: 300px !important;
+	}
+
+	.av-section-color-overlay-wrap
+	.avia-layerslider .ls-thumbnail-wrapper {
+		bottom: 65px !important;
+	}
+
+	#top .av-small-burger-icon {
+		transform: scale(0.8) !important;
+	}
+
+	.responsive #top .av-main-nav .menu-item-avia-special {
+		top: 3px !important;
+
+	}
+
+	.responsive #top #wrap_all .av-logo-container {
+		margin: 0px;
+		padding-right: 20px;
+	}
+
+	.responsive #top .av-main-nav .menu-item-avia-special {
+		position: relative;
+		top: 12px;
+	}
+
+	.responsive #top #wrap_all .main_menu {
+		width: 100%;
+	}
+
+	.responsive #top .logo {
+		height: 80px !important;
+		margin: 35px 0px 0px 25px !important;
+	}
+
+	.responsive #top .logo a {
+		z-index: 99;
+	}
+
+	.responsive #top .logo a img {
+		height: 50px !important;
+	}
+
+	.phone-info, .sub_menu {
+		padding: 6px 20px;
+		border-bottom-left-radius: 0px;
+		float: left;
+	}
+
+	.responsive #top #main .sidebar {
+		display: block;
+		clear: both;
+        padding-top: 20px;
+        border-top: 2px solid #333333;
+	}
+
+    #main .sidebar .widget {
+        width: 100% !important;
+    }
+
+    .sidebar_left .inner_sidebar {
+        margin: 0px;
+    }
+
+    .criareh-contact {
+		display: none;
+	}
+	#footer .flex_column, #footer .widget {
+		margin-bottom: 0px !important;
+	}
+	#footer #nav_menu-8 {
+		border-right: none;
+	}
+
+
+}
+
+@media only screen and (max-width: 640px) {
+
+	#layerslider_5, #layerslider_5.ls-wrapper.ls-in-out,
+	#layerslider_5 .ls-wrapper.ls-bg-outer, #layerslider_5 .ls-slide-transition-wrapper {
+		min-height: 250px !important;
+	}
+
+	#layerslider_5 img.ls-bg {
+		min-height: 300px!important;
+		width: auto !important;
+		position: absolute;
+		left: 0%;
+	}
+
+    .responsive #top .container .av-content-small, .responsive #top #wrap_all .flex_column, .responsive #top #wrap_all .av-flex-cells .no_margin {
+        margin-bottom: 0px;
+    }
+
+    .main_menu .fa, .main_menu .fas {
+        margin-right: 8px;
+    }
+
+    .page-banner .av-section-color-overlay-wrap .container {
+		height: 175px !important;
+	}
+
+	#main .team-header h1 {
+		margin-bottom: 30px !important;
+	}
+
+	#main .team-header h2 {
+		margin: 30px 0px !important;
+	}
+
+	.content {
+		padding: 25px 0px 20px !important;
+	}
+
+    #main .alignright, #main .alignleft {
+        padding: 0 0 1.5rem 0 !important;
+    }
+
+    .responsive .avia-testimonial {
+        padding: 15px 0 15px 0 !important;
+        margin: 0px !important;
+    }
+
+    .avia-testimonial-wrapper {
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+
+
+    #top .avia-layerslider .ls-nav-prev, #top .avia-layerslider .ls-nav-next {
+        margin: 0px -20px;
+        top: 25%;
+        opacity: 1;
+    }
+
+    .av-boxed-grid-style .avia-testimonial_inner {
+        padding: 30px !important;
+    }
+
+    .av-boxed-grid-style .avia-testimonial_inner .avia-testimonial-content p {
+        font-size: 20px;
+    }
+
+    .avia-testimonial-meta-mini {
+        font-size: 16px;
+    }
+
+    .flex_column.form-container {
+        margin-top: 20px !important;
+        padding: 20px 30px 30px 30px !important;
+    }
+
+    span.wpcf7-list-item {
+        width: 100% !important;
+    }
+
+    .wpcf7-submit {
+        width: 100%;
+    }
+
+    div#yelp_widget-3 {
+        padding-top: 20px;
+        border-top: 2px solid #333;
+        margin-top: 30px;
+    }
+
+    .belgard .img-inline-left {
+		float: none;
+		margin: 0px 0px .8em 0px !important;
+		max-width: 100% !important;
+		width: 100% !important;
+		height: auto !important;
+	}
+
+	.belgard .logo-right {
+		float: none;
+		max-width: 100px !important;
+		margin: -5px auto 1.5em auto !important;
+	}
+
+
+}
