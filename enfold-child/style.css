@@ -443,6 +443,18 @@ strong {
 	line-height: 1.4;
 }
 
+
+/** Project Details **/
+.project-details-wrapper {
+	clear: both;
+	margin: 20px 0px;
+	background: #efefef;
+	padding: 35px 40px 20px 40px;
+	background-color: #efefef;
+	border-radius: 0px;
+}
+
+
 /* Buttons */
 #top .avia-button {
 	padding-right: 25px !important;

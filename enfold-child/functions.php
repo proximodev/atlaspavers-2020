@@ -34,4 +34,10 @@ add_action( 'wp_enqueue_scripts', 'add_customjs', 100 );
 function av_breadcrumbs_shortcode( $atts ) {
     return avia_breadcrumbs(array('separator' => '/', 'richsnippet' => true));
 }
-add_shortcode( 'av_breadcrumbs', 'av_breadcrumbs_shortcode' );
+
+function myshortcode_title( ){
+   return get_the_title();
+}
+add_shortcode( 'page_title', 'myshortcode_title' );
+
+add_action( 'avia_before_footer_columns', function(){ dynamic_sidebar('footer_top'); });
