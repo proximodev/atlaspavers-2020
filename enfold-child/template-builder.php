@@ -133,7 +133,6 @@
 		 * If user views a preview we must use the content because WordPress doesn't update the post meta field
 		 */
 		$content = apply_filters( 'avia_builder_precompile', get_the_content() );
-		$content .= 'test2';
 		/**
 		 * In preview we must update the shortcode tree to reflect the current page structure.
 		 * Prior make sure that shortcodes are balanced.
@@ -142,7 +141,6 @@
 		$content = ShortcodeHelper::clean_up_shortcode( $content, 'balance_only' );
 		ShortcodeHelper::$tree = ShortcodeHelper::build_shortcode_tree( $content );
 
-		$content .= 'test2';
 	}
 	
 	/**
