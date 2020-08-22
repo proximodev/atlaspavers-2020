@@ -81,8 +81,38 @@
 						do_action('avia_before_footer_columns');
 
 						//create the footer columns by iterating
+                        ?>
 
-						
+                        <div class="top-footer-wrapper">
+
+                            <div class="footer-badges-wrapper">
+                                <div class="badge-flex-column">
+                                    <div>
+                                        <img class="footer-badge" src="/wp-content/themes/enfold-child/images/badge-logo-bbb.png">
+                                    </div>
+                                </div>
+                                <div class="badge-flex-column">
+                                    <div>
+                                        <img class="footer-badge" src="/wp-content/themes/enfold-child/images/badge-logo-icpi.png">
+                                    </div>
+                                </div>
+                                <div class="badge-flex-column">
+                                    <div>
+                                        <img class="footer-badge diamond" src="/wp-content/themes/enfold-child/images/badge-logo-diamond.png"  alt="">
+                                    </div>
+                                </div>
+                                <div class="badge-flex-column">
+                                    <div>
+                                        <img class="footer-badge" src="/wp-content/themes/enfold-child/images/badge-logo-cslb.png" alt="CSLB">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-social-wrapper">
+
+                            </div>
+                        </div>
+
+                        <?php
 				        switch($columns)
 				        {
 				        	case 1: $class = ''; break;
@@ -129,20 +159,6 @@
 			//copyright
 			$copyright = do_shortcode( avia_get_option('copyright', "&copy; ".__('Copyright','avia_framework')."  - <a href='".home_url('/')."'>".get_bloginfo('name')."</a>") );
 
-			// you can filter and remove the backlink with an add_filter function
-			// from your themes (or child themes) functions.php file if you dont want to edit this file
-			// you can also remove the kriesi.at backlink by adding [nolink] to your custom copyright field in the admin area
-			// you can also just keep that link. I really do appreciate it ;)
-			$kriesi_at_backlink = kriesi_backlink(get_option(THEMENAMECLEAN."_initial_version"), 'Enfold');
-
-
-			
-			if($copyright && strpos($copyright, '[nolink]') !== false)
-			{
-				$kriesi_at_backlink = "";
-				$copyright = str_replace("[nolink]","",$copyright);
-			}
-
 			if( in_array( $footer_widget_setting, array( 'all', 'nofooterwidgets', 'page_in_footer_socket' ) ) )
 			{
 
@@ -151,7 +167,7 @@
 				<footer class='container_wrap socket_color' id='socket' <?php avia_markup_helper(array('context' => 'footer')); ?>>
                     <div class='container'>
 
-                        <span class='copyright'><?php echo $copyright . $kriesi_at_backlink; ?></span>
+                        <span class='copyright'><?php echo $copyright; ?></span>
 
                         <?php
                         	if(avia_get_option('footer_social', 'disabled') != "disabled")
@@ -242,30 +258,6 @@
 
 wp_footer();
 ?>
-
-<script type="text/javascript">
-(function($){
-    
-	$('.member-design .team-member-description').hide();
-	$(".member-design a.avia-button").addClass('close_member');
-	$(".member-design a.avia-button").html('<span class="avia_iconbox_title">READ MORE</span>');
-	$(".member-design a.avia-button").attr("click","1");
-	$('.member-design a.avia-button').on("click", function (e) {
-		e.preventDefault();
-		
-		if($(this).attr('click') == 1){
-			$(this).html('<span class="avia_iconbox_title">READ LESS</span>');
-			$(this).parent().parent().find('.team-member-description').show();
-			$(this).attr("click","2");
-		} else {
-			$(this).attr("click","1");
-			$(this).html('<span class="avia_iconbox_title">READ MORE</span>');
-			$(this).parent().parent().find('.team-member-description').hide();
-		}
-
-	});
-	
-})(jQuery);
 
 </body>
 </html>
