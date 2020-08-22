@@ -454,6 +454,9 @@ strong {
 	border-radius: 0px;
 }
 
+.project-gallery {
+    margin-top: 1rem;
+}
 
 /* Buttons */
 #top .avia-button {

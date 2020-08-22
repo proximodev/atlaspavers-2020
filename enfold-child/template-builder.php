@@ -87,6 +87,8 @@
             $product_line = get_field("product_line");
             $material_type = get_field("material_type");
             $color = get_field("color");
+            $border_color = get_field("border_color");
+            $sand_color = get_field("sand_color");
             $yelp_review_url = get_field("yelp_review_url");
             $google_review_url = get_field("google_review_url");
 
@@ -120,7 +122,9 @@
             if ($material_type) { $content .= "<li><strong>Material Type:</strong> " . $material_type; }
             if ($manufacturer) { $content .= "<li><strong>Product:</strong> " . $manufacturer; }
             if ($product_line) { $content .= " " . $product_line; }
-            if ($color) { $content .= "<li><strong>Color:</strong> " . $color; }
+            if ($color) { $content .= "<li><strong>Paver Color:</strong> " . $color; }
+            if ($color) { $content .= "<li><strong>Border Color:</strong> " . $border_color; }
+            if ($color) { $content .= "<li><strong>Sand Color:</strong> " . $sand_color; }
             $content .= "</ul>";
             $content .= "</div>";
 
