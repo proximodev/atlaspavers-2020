@@ -123,8 +123,8 @@
             if ($manufacturer) { $content .= "<li><strong>Product:</strong> " . $manufacturer; }
             if ($product_line) { $content .= " " . $product_line; }
             if ($color) { $content .= "<li><strong>Paver Color:</strong> " . $color; }
-            if ($color) { $content .= "<li><strong>Border Color:</strong> " . $border_color; }
-            if ($color) { $content .= "<li><strong>Sand Color:</strong> " . $sand_color; }
+            if ($border_color) { $content .= "<li><strong>Border Color:</strong> " . $border_color; }
+            if ($sand_color) { $content .= "<li><strong>Sand Color:</strong> " . $sand_color; }
             $content .= "</ul>";
             $content .= "</div>";
 
